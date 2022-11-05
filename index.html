@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js"></script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Management System</title>
+  </head>
+  <body>
+    <h2>Hotel Management System</h2>
+    <form>
+      <div class="text-field">
+        <label for="name">Customer Name:</label>
+        <input id="name" type="text" required />
+      </div>
+      <div class="text-field">
+        <label for="in-date">Check-in date:</label>
+        <input id="in-date" type="date" required />
+      </div>
+      <div class="text-field">
+        <label for="out-date">Check-out date:</label>
+        <input id="out-date" type="date" required />
+      </div>
+      <div class="text-field">
+        <label for="room">Room type:</label>
+        <select id="room">
+          <option value="Normal">Normal Room</option>
+          <option value="Deluxe">Deluxe Room</option>
+        </select>
+      </div>
+      <div class="text-field">
+        <input
+          id="submit"
+          type="button"
+          value="Generate Invoice"
+          onclick="formData()"
+        />
+        <input type="reset" />
+      </div>
+    </form>
+    <div id="name-output"></div>
+    <div id="in-date-output"></div>
+    <div id="out-date-output"></div>
+    <div id="room-output"></div>
+    <div id="rate-per-day-output"></div>
+    <div id="no-of-days"></div>
+    <div id="gst"></div>
+    <div id="total-payable"></div>
+  </body>
+</html>
